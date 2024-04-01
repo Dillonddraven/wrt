@@ -1,0 +1,86 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #555;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none; /* Hide all sections by default */
+}
+
+section h2, section h3, section h4 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+}
+
+@media (max-width: 768px) {
+    nav ul li button {
+        display: block;
+        width: 100%;
+    }
+}
